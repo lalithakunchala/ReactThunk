@@ -36,8 +36,9 @@ class Register extends React.Component {
     
     return (
       <React.Fragment>
+        <div style={{width:"200px" ,margin:"auto",background:"green",color:"white",padding:"10px", marginTop:"200px"}}>
         <div style={{width:"150px" ,margin:"auto"}}>
-        <Link to="/">Login</Link>
+        <Link style={{color:"white"}} to="/">Login</Link>
         <div><h2>Register</h2></div>
         <div  style={{display:"flex", flexDirection:"column",width:"150px" ,margin:"auto"}}>
           <input type="text"  placeholder="name" name="name" onChange={this.handleChange}></input>
@@ -60,6 +61,7 @@ class Register extends React.Component {
         ) : (
           <div>error: {this.props.regError}</div>
         )}
+        </div>
       </React.Fragment>
     )
   }

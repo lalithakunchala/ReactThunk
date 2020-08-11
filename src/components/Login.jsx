@@ -31,13 +31,13 @@ class Login extends React.PureComponent {
     
     return (
       <React.Fragment>
-         <div style={{width:"200px" ,margin:"auto"}}>
-          <Link to="/Register">Register</Link>
+         <div style={{width:"200px" ,margin:"auto",background:"green",color:"white",padding:"10px", marginTop:"200px"}}>
+          <Link style={{color:"white"}} to="/Register">Register</Link>
           <div ><h2 className="text-center">Login</h2>
         
         </div>
-        <div  style={{display:"flex", flexDirection:"column",width:"150px"}}>
-        <input type="text"  placeholder="username" name="username" onChange={this.handleChange}></input>
+        <div  style={{display:"flex", flexDirection:"column"}}>
+        <input type="text"  placeholder="username" name="username" onChange={this.handleChange}></input >
           <input type="text"  placeholder="password" name="password" onChange={this.handleChange}></input>
           
           <br></br><hr></hr>

@@ -41,17 +41,18 @@ class Dashboard extends React.Component {
         return (
 
       <React.Fragment>
-
+        <div style={{width:"800px" ,margin:"auto",background:"green",color:"white",padding:"10px", marginTop:"200px"}}>
         <div style={{float:"right"}}>
           <Link to="/"><button onClick={this.props.logout}>Signout</button></Link>
           <Link to="/profile"><button >Profile</button></Link>
         </div>
           <div style={{width:"100px",margin:"auto"}}>
-        <div className="h1">{this.props.proSuccess.username}</div>
-        <div className="h4">{this.props.proSuccess.mobile}</div>
+        <div style={{fontSize:"50px"}}>{this.props.proSuccess.username}</div>
+        <div className="h1">{this.props.proSuccess.mobile}</div>
         <div className="h4">{this.props.proSuccess.email}</div>
         <div className="h4">{this.props.proSuccess.description}</div>
         <div className="h4">{this.props.proSuccess.token}</div>
+        </div>
         </div>
       </React.Fragment>
     );
